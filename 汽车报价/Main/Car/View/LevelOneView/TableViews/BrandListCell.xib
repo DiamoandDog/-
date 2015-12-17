@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrandsListTableViewCell" rowHeight="82" id="8bS-SE-cch" customClass="BrandListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8bS-SE-cch" id="3cb-3S-Wac">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UXO-s2-EuK">
+                        <rect key="frame" x="5" y="0.0" width="50" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="dd6-bu-PF3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-43-vpG">
+                        <rect key="frame" x="75" y="10" width="225" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mrh-43-vpG" secondAttribute="bottom" constant="10" id="C4F-0P-WoP"/>
+                    <constraint firstAttribute="bottom" secondItem="UXO-s2-EuK" secondAttribute="bottom" id="R9w-m4-MmU"/>
+                    <constraint firstItem="UXO-s2-EuK" firstAttribute="top" secondItem="3cb-3S-Wac" secondAttribute="top" id="VmC-Bs-Y2y"/>
+                    <constraint firstItem="mrh-43-vpG" firstAttribute="top" secondItem="3cb-3S-Wac" secondAttribute="top" constant="10" id="bNR-4G-hJE"/>
+                    <constraint firstAttribute="trailing" secondItem="mrh-43-vpG" secondAttribute="trailing" constant="20" id="kDk-gV-JNN"/>
+                    <constraint firstItem="mrh-43-vpG" firstAttribute="leading" secondItem="UXO-s2-EuK" secondAttribute="trailing" constant="20" id="s0N-r8-fnI"/>
+                    <constraint firstItem="UXO-s2-EuK" firstAttribute="leading" secondItem="3cb-3S-Wac" secondAttribute="leading" constant="5" id="sMG-uI-OtS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BrandLogoImageView" destination="UXO-s2-EuK" id="N7j-02-Gb3"/>
+                <outlet property="BrandNameLable" destination="mrh-43-vpG" id="Ula-Q0-PCs"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="319"/>
+        </tableViewCell>
+    </objects>
+</document>

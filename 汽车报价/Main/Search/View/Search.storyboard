@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6mV-cr-SE1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="nge-PJ-UTg">
+            <objects>
+                <viewController id="CVR-Th-3bk" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lAr-9Y-JXR"/>
+                        <viewControllerLayoutGuide type="bottom" id="NYu-kP-nxW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yfe-WA-jgr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uQn-bU-ch9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdN-xF-BO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-675" y="199"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="Oqn-Xd-RB8">
+            <objects>
+                <navigationController id="6mV-cr-SE1" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zzr-hf-p04">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1EL-e4-lBG" kind="relationship" relationship="rootViewController" id="BeR-Vj-A8v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0D5-lt-PEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="-504"/>
+        </scene>
+        <!--精准找车-->
+        <scene sceneID="yHS-nF-kY9">
+            <objects>
+                <viewController id="1EL-e4-lBG" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TL7-wB-6au"/>
+                        <viewControllerLayoutGuide type="bottom" id="02a-4J-N0x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kAn-dj-2CF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="精准找车" id="wgo-Nh-nLn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyK-hm-uat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1051" y="-504"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="LWj-OO-iOw">
+            <objects>
+                <navigationController id="9gs-ey-pba" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9DB-2v-JKW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HRV-fc-6VT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CVR-Th-3bk" kind="relationship" relationship="rootViewController" id="mjD-Vk-dsv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgE-zI-eso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="185"/>
+        </scene>
+    </scenes>
+</document>

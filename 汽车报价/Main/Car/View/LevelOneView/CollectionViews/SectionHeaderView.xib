@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SER-fR-Iq4">
+                    <rect key="frame" x="20" y="1" width="300" height="28"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SER-fR-Iq4" secondAttribute="trailing" id="3bI-xB-8wz"/>
+                <constraint firstAttribute="bottom" secondItem="SER-fR-Iq4" secondAttribute="bottom" constant="1" id="7zD-c4-GTz"/>
+                <constraint firstItem="SER-fR-Iq4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="XPx-lQ-P4z"/>
+                <constraint firstItem="SER-fR-Iq4" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="1" id="cpS-Kk-Cx9"/>
+            </constraints>
+            <connections>
+                <outlet property="sectionHeaderLable" destination="SER-fR-Iq4" id="URP-no-R09"/>
+            </connections>
+            <point key="canvasLocation" x="146" y="66"/>
+        </collectionReusableView>
+    </objects>
+</document>

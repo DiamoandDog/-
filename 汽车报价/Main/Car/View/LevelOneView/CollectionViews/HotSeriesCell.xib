@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="pnj-oB-ros" customClass="HotSeriesCell">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="113"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kT-Sk-Stx">
+                        <rect key="frame" x="10" y="5" width="101" height="73.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rx6-9p-Ol5">
+                        <rect key="frame" x="5" y="78" width="111" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="LSg-cQ-jx2"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="zJf-lX-vSk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rx6-9p-Ol5" secondAttribute="trailing" constant="5" id="CyX-zy-zbN"/>
+                <constraint firstAttribute="trailing" secondItem="3kT-Sk-Stx" secondAttribute="trailing" constant="10" id="aHC-AA-bme"/>
+                <constraint firstItem="3kT-Sk-Stx" firstAttribute="leading" secondItem="pnj-oB-ros" secondAttribute="leading" constant="10" id="akO-dv-ETX"/>
+                <constraint firstAttribute="bottom" secondItem="rx6-9p-Ol5" secondAttribute="bottom" constant="10" id="hWh-p2-bqG"/>
+                <constraint firstItem="rx6-9p-Ol5" firstAttribute="top" secondItem="3kT-Sk-Stx" secondAttribute="bottom" id="jMa-RG-YDw"/>
+                <constraint firstItem="3kT-Sk-Stx" firstAttribute="top" secondItem="pnj-oB-ros" secondAttribute="top" constant="5" id="txr-CT-1K8"/>
+                <constraint firstItem="rx6-9p-Ol5" firstAttribute="leading" secondItem="pnj-oB-ros" secondAttribute="leading" constant="5" id="uet-n1-UaZ"/>
+            </constraints>
+            <size key="customSize" width="121" height="113"/>
+            <connections>
+                <outlet property="carLogoImageView" destination="3kT-Sk-Stx" id="w4R-p6-K7b"/>
+                <outlet property="carNameLable" destination="rx6-9p-Ol5" id="pBg-1M-LTi"/>
+            </connections>
+            <point key="canvasLocation" x="89.5" y="223.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
